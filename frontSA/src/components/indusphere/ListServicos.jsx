@@ -52,7 +52,7 @@ export default function ListServicos() {
                 if (serviceFuntions.serviceName === service.name) {
                     bg = '#4f46e5'
                 } else {
-                    bg = '#cacedf'
+                    bg = 'transparent'
                 }
                 
                 return(
