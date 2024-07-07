@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, #1f1c54 , #04061b);
-    height: 100vh; /* Garante que a sidebar ocupe toda a altura da tela */
+    height: calc(100vh - 4px); /* Garante que a sidebar ocupe toda a altura da tela */
     border-radius: 0px 18px 18px 0px;
     position: fixed;
     left: 0;
@@ -14,8 +14,8 @@
     z-index: 1001;
     overflow-y: auto; /* Adiciona comportamento de overflow */
     direction: rtl;
-    margin: solid white;  
-    margin-right: 1px white;
+    border: 2px solid white;
+    border-left: none;
 }
 #sidebar img {
     filter: invert(1);
@@ -36,7 +36,6 @@
 }
 
 #user_infos {
-    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -178,6 +177,7 @@
     width: 150px;
     height: auto;
     justify-content: flex-end;
+    color: white;
 }
 
 #sidebar.open-sidebar .side-item a {

@@ -1,9 +1,15 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
 import Home from "../pages/indusphere/Home"
 import Private from "../pages/Private"
 import RequireAuth from "../contexts/indusphere/RequireAuth"
 import Login from "../pages/indusphere/Login"
-import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
+import AdicionarProduto from "../pages/controleEstoque/AdicionarProduto"
+import GeralMM from "../pages/monitoramentoMaquinas/GeralMM"
+import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
+import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
+import VerficiarEstoqueProduto from "../pages/controleEstoque/VerficiarEstoqueProduto"
+import ServicosRastreamento from "../pages/rastreioRFID/ServicosRastreamento"
+import Servicos3D from "../pages/impressora3D/Servicos3D"
 
 export default function Rotas() {
   return (
@@ -12,27 +18,30 @@ export default function Rotas() {
         <Route element={<RequireAuth/>}>
           <Route path="/" element={<Home/>}/>
           <Route path="/private" element={<Private/>}/>
-          <Route path='/controle-estoque' element={<Private/>}>
+          <Route path='/controle-estoque' element={<Outlet/>}>
+            <Route path='verificar-estoque-produto' element={<VerficiarEstoqueProduto/>}/>
+            <Route path='adicionar-produto' element={<AdicionarProduto/>}/>
+          </Route>
+          <Route path='/monitoramento-maquinas' element={<Outlet/>}>
+            <Route path="geral" element={<GeralMM/>}/>
+            <Route path="kpi-maquinas" element={<KpiMaquinas/>}/>
+            <Route path="cadastros" element={<CadastroMaquinas/>}/>
+          </Route>
+          <Route path='/rastreio-rfid' element={<Outlet/>}>
+            <Route path="servicos-rastreamento" element={<ServicosRastreamento/>}>
+              
+            </Route>
+          </Route>
+          <Route path='/impressora-3d' element={<Outlet/>}>
+            <Route path="servicos-3d" element={<Servicos3D/>}/>
+          </Route> 
+          <Route path='/inventario' element={<Outlet/>}>
 
           </Route>
-          <Route path='/monitoramento-maquinas' element={<HomeMM/>}>
-            <Route path="home" element={<HomeMM/>}/>
-            <Route path="kpi-maquinas" element={<></>}/>
-            <Route path="cadastros" element={<></>}/>
-          </Route>
-          <Route path='/rastreio-rfid' element={<Private/>}>
+          <Route path='/qualidade' element={<Outlet/>}>
 
           </Route>
-          <Route path='/impressora-3d' element={<Private/>}>
-
-          </Route>
-          <Route path='/inventario' element={<Private/>}>
-
-          </Route>
-          <Route path='/qualidade' element={<Private/>}>
-
-          </Route>
-          <Route path="/gestao" element={<Private/>}>
+          <Route path="/gestao" element={<Outlet/>}>
 
           </Route>
         </Route>
