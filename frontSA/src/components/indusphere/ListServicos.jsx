@@ -34,7 +34,7 @@ export default function ListServicos() {
         },
         {
             name: 'Qualidade',
-            rota: '/qualidade',
+            rota: '/qualidade/home-qualidade',
             src: '/equipes/qualidade.png'
         },
         {
