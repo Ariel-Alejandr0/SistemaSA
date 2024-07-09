@@ -12,6 +12,7 @@ import ServicosRastreamento from "../pages/rastreioRFID/ServicosRastreamento"
 import Servicos3D from "../pages/impressora3D/Servicos3D"
 import ControleQualidade from "../pages/controleQualidade/ControleQualidade"
 import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErros"
+import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 
 export default function Rotas() {
   return (
@@ -43,6 +44,7 @@ export default function Rotas() {
           <Route path='/qualidade' element={<Outlet/>}>
             <Route path='home-qualidade' element={<ControleQualidade/>}/>
             <Route path='quantidade-erros' element={<QuantidadeErros/>}/>
+            <Route path='listar-erros' element={<ListarErros/>}/>
           </Route>
           <Route path="/gestao" element={<Outlet/>}>
 

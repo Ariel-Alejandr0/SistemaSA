@@ -3,11 +3,11 @@ import '../../styles/pages/ControleQualidade/controlequalidade.css'
 import { useNavigate } from 'react-router-dom'
 
 export default function ControleQualidade() {
-  const navigate = useNavigate()
-
+  const navigate = useNavigate() 
   function handleOnClick(e) {
-    e.preventDefault()
-    navigate("/qualidade/quantidade-erros")
+      
+      e.preventDefault()
+      navigate("/qualidade/quantidade-erros")
   }
 
   return (
