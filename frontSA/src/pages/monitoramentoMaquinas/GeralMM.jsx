@@ -1,16 +1,16 @@
 import React, { useContext, useEffect } from 'react'
 import { ServiceCtx } from '../../contexts/indusphere/Service'
 
-export default function HomeMM() {
+export default function GeralMM() {
     const service = useContext(ServiceCtx)
 
     useEffect(() => {
         service.setSrcLogo('/equipes/monitor.png')
         service.setPages([
             {
-                label: 'Home',
-                rota: 'monitoramento-maquinas/home'
-            },
+                label: 'Geral',
+                rota: 'monitoramento-maquinas/geral'
+            },  
             {
                 label: 'Kpi-Maquinas',
                 rota: 'monitoramento-maquinas/kpi-maquinas'
@@ -24,7 +24,7 @@ export default function HomeMM() {
 
     return (
         <div>
-            <h2>HOME MONITAREMENTO MAQUINAS</h2>
+            <h2>Geral MONITAREMENTO MAQUINAS</h2>
         </div>
     )
 }
