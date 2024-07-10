@@ -6,7 +6,7 @@ export default function RelatoriosSalvos() {
     const navigate = useNavigate()
 
   return (
-    <div>
+    <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <div className="container">
             <h1>Relatórios Salvos</h1>
             <div id="relatoriosContainer"></div>
