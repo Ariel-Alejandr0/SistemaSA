@@ -14,6 +14,7 @@ import ControleQualidade from "../pages/controleQualidade/ControleQualidade"
 import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErros"
 import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 import GerarRelatorio from "../pages/controleQualidade/relatorios/GerarRelatorio"
+import RelatoriosSalvos from "../pages/controleQualidade/relatorios/RelatoriosSalvos"
 
 export default function Rotas() {
   return (
@@ -47,6 +48,7 @@ export default function Rotas() {
             <Route path='quantidade-erros' element={<QuantidadeErros/>}/>
             <Route path='listar-erros' element={<ListarErros/>}/>
             <Route path='gerar-relatorio' element={<GerarRelatorio/>}/>
+            <Route path='relatorios-salvos' element={<RelatoriosSalvos/>}/>
           </Route>
           <Route path="/gestao" element={<Outlet/>}>
 

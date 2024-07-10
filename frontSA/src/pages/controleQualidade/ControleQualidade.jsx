@@ -24,7 +24,7 @@ export default function ControleQualidade() {
               <label >ID do Lote:</label>
               <input type="text" id="idLote" name="idLote" required />
               <button type="submit" onClick={(e) => handleOnClick(e, '/qualidade/quantidade-erros', navigate)} >Próximo</button>
-              <button  id="relatorioss">Ver Relatórios Salvos</button>
+              <button  id="relatorioss" onClick={(e) => handleOnClick(e, '/qualidade/relatorios-salvos', navigate)} >Ver Relatórios Salvos</button>
           </form>
       </div>
     </div>
