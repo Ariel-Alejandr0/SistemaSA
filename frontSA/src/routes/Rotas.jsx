@@ -13,6 +13,10 @@ import Servicos3D from "../pages/impressora3D/Servicos3D"
 import ControleQualidade from "../pages/controleQualidade/ControleQualidade"
 import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErros"
 import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
+import VerificarEstoque from "../pages/impressora3D/Estoque/VerificarEstoque"
+import ImprimirPecas from "../pages/impressora3D/Imprimir/ImprimirPecas"
+import FazerPedido from "../pages/impressora3D/Pedido/FazerPedido"
+import VerificarOMS from "../pages/impressora3D/VerificarOMS/VerificarOMS"
 
 export default function Rotas() {
   return (
@@ -32,11 +36,14 @@ export default function Rotas() {
           </Route>
           <Route path='/rastreio-rfid' element={<Outlet/>}>
             <Route path="servicos-rastreamento" element={<ServicosRastreamento/>}>
-              
             </Route>
           </Route>
           <Route path='/impressora-3d' element={<Outlet/>}>
             <Route path="servicos-3d" element={<Servicos3D/>}/>
+            <Route path="verificar-estoque" element={<VerificarEstoque/>}/>
+            <Route path="imprimir-peca" element={<ImprimirPecas/>}/>
+            <Route path="fazer-pedido" element={<FazerPedido/>}/>
+            <Route path="verificar-oms" element={<VerificarOMS/>}/>
           </Route> 
           <Route path='/inventario' element={<Outlet/>}>
 
