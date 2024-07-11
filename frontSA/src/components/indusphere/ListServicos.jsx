@@ -9,22 +9,22 @@ export default function ListServicos() {
     const DATA = [
         {
             name: 'Controle de Estoque',
-            rota: '/controle-estoque',
+            rota: '/controle-estoque/verificar-estoque-produto',
             src: '/equipes/box.png'
         },
         {
             name: 'Monitorament Maq',
-            rota: '/monitoramento-maquinas',
+            rota: '/monitoramento-maquinas/geral',
             src: '/equipes/monitor.png'
         },
         {
             name: 'Rastreio RFID',
-            rota: '/rastreio-rfid',
+            rota: '/rastreio-rfid/servicos-rastreamento',
             src: '/equipes/localizacao.png'
         },
         {
             name: 'Impressora 3D',
-            rota: '/impressora-3d',
+            rota: '/impressora-3d/servicos-3d',
             src: '/equipes/impressora-3d.png'
         },
         {
@@ -34,7 +34,7 @@ export default function ListServicos() {
         },
         {
             name: 'Qualidade',
-            rota: '/qualidade',
+            rota: '/qualidade/home-qualidade',
             src: '/equipes/qualidade.png'
         },
         {
@@ -52,7 +52,7 @@ export default function ListServicos() {
                 if (serviceFuntions.serviceName === service.name) {
                     bg = '#4f46e5'
                 } else {
-                    bg = '#cacedf'
+                    bg = 'transparent'
                 }
                 
                 return(
