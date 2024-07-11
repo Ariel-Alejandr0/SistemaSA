@@ -4,6 +4,7 @@ import iconlocalizacao from '../../assets/rastreio/images/iconlocalização.png'
 import iconenvio from '../../assets/rastreio/images/icon_envio.png'
 import { useNavigate } from 'react-router-dom'
 import { handleOnClick } from '../../functions/HandleOnClick'
+import '../../styles/pages/rastreio/styles.css'
 
 export default function ServicosRastreamento() {
   const navigate = useNavigate()

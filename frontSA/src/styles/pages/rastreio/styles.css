@@ -1,0 +1,41 @@
+.container {
+    text-align: center;
+}
+
+.iconlogo {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A0A0A0;
+    color: #FFFFFF;
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin: 20px 0;
+    width: 500px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 1s, color 0.3s;
+}
+.button:hover {
+    background-color: #dad7d7;
+    color: #0F1534;
+}
+.button img {
+    height: 32px;
+    width: 32px;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+h1{
+    margin-left: 20px;
+}
