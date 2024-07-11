@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './styles.css'; 
+import { handleOnClick } from '../../../functions/HandleOnClick'
+import { useNavigate } from 'react-router-dom'
 
 export default function VerificarOMS() {
+    const navigate = useNavigate()
     const [rows, setRows] = useState([]);
 
     const addRow = () => {
@@ -89,7 +92,9 @@ export default function VerificarOMS() {
                 <p><span className="yellow"></span> Em andamento</p>
                 <p><span className="red"></span> Alerta</p>
             </div>
-            <a href="navbar-impressora-3d.html" className="back-button">Voltar</a>
+            <div class="voltar" id="back-button" onClick={(e) => handleOnClick(e, '/impressora-3d/servicos-3d', navigate)}>
+      <p>Voltar</p>
+    </div>
         </div>
         </div>
     );
