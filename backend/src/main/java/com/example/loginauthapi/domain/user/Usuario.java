@@ -8,41 +8,38 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-
-@Table(name = "users")
-@Entity(name = "users")
+@Table(name = "Usuario")
+@Entity(name = "Usuario")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id_usuario")
-public class User{
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Long id_usuario;
-    private String name;
+
+    private String nome;
     private String email;
     private String idPapel;
-    private String password;
+    private String senha;
     private Long idPessoa;
     private Date dataCadastro;
 
 
-
-    @OneToOne
-    private Pessoa pessoa;
-
-
-    public User(String name, String email, String idPapel, String password) {
-        this.name = name;
+    public Usuario(String nome, String email, String idPapel, String senha, Long idPessoa, Date dataCadastro) {
+        this.nome = nome;
         this.email = email;
         this.idPapel = idPapel;
-        this.password = password;
-
-
+        this.senha = senha;
+        this.idPessoa = idPessoa;
+        this.dataCadastro = dataCadastro;
 
     }
 
 
 }
+
+
