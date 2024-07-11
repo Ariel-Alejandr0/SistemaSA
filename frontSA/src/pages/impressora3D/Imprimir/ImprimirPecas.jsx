@@ -16,9 +16,9 @@ export default function ImprimirPecas() {
                 <p>Verificar moldes</p>
                 <img src={VerificarMoldes} alt="verificar Moldes"/>
             </div>
-            <div class="card">
+            <div class="card" onClick={(e) => handleOnClick(e, '/impressora-3d/imprimir-propria-peca', navigate)}>
                 <p>Fazer própria peça</p>
-                <img src={FazerPeca} alt="verificar Moldes"/>
+                <img src={FazerPeca} alt="fazer peca"/>
             </div>
     </div>
     <div class="voltar" id="back-button" onClick={(e) => handleOnClick(e, '/impressora-3d/servicos-3d', navigate)}>

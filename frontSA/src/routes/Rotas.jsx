@@ -22,6 +22,8 @@ import EstoqueFilamento from "../pages/impressora3D/Estoque/EstoqueFilamento"
 import VerificarMoldes from "../pages/impressora3D/Imprimir/VerificarMoldes"
 import Fornecedor from "../pages/impressora3D/Pedido/Fornecedor"
 import Filamento from "../pages/impressora3D/Pedido/Filamento"
+import ImprimirPecaDetalhes from "../pages/impressora3D/Imprimir/ImprimirPecaDetalhes"
+import FazerPropraPeca from "../pages/impressora3D/Imprimir/FazerPropraPeca"
 
 export default function Rotas() {
   return (
@@ -59,6 +61,8 @@ export default function Rotas() {
               <Route path="estoque-filamento" element={<EstoqueFilamento/>}/>
             <Route path="imprimir-peca" element={<ImprimirPecas/>}/>
               <Route path="verificar-moldes" element={<VerificarMoldes/>}/>
+                <Route path="imprimir-peca-detalhes" element={<ImprimirPecaDetalhes/>}/>
+                <Route path="imprimir-propria-peca" element={<FazerPropraPeca/>}/>
             <Route path="fazer-pedido" element={<FazerPedido/>}/>
               <Route path="pedir-fornecedor" element={<Fornecedor/>}/>
               <Route path="pedir-filamento" element={<Filamento/>}/>

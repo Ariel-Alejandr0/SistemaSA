@@ -16,7 +16,7 @@ export default function VerificarMoldes() {
         <h1>Moldes</h1>
     </div>
     <div class="principal-container">
-            <div class="card">
+            <div class="card" onClick={(e) => handleOnClick(e, '/impressora-3d/imprimir-peca-detalhes', navigate)}>
                 <p>Engrenagem de câmbio</p>
                 <img src={EngCambio} alt="Engrenagem de câmbio"/>
             </div>
