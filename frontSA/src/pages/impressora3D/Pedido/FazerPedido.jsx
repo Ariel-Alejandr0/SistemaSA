@@ -1,6 +1,6 @@
 import React from 'react'
-import PecasFornecedor from '../../../assets/impressora3D/images/path-to-icon-fornecedor.png'
-import Filamento from '../../../assets/impressora3D/images/path-to-icon-filamento.png'
+import PecasFornecedor from '../../../assets/impressora3D/images/fornecedor.png'
+import Filamento from '../../../assets/impressora3D/images/filamento.png'
 import { handleOnClick } from '../../../functions/HandleOnClick'
 import { useNavigate } from 'react-router-dom'
 
@@ -17,7 +17,7 @@ export default function FazerPedido() {
                 <p>Pedir peças ao <br/> fornecedor</p>
                 <img src={PecasFornecedor} alt="Pecas Fornecedor"/>
             </div>
-            <div class="card">
+            <div class="card" onClick={(e) => handleOnClick(e, '/impressora-3d/pedir-filamento', navigate)}>
                 <p>Pedir filamento</p>
                 <img src={Filamento} alt="Pedir Filamento"/>
             </div>
