@@ -26,4 +26,3 @@ public class MachineController {
 		messagingTemplate.convertAndSend("/topic/greetings", greeting);
 	}
 }
-
