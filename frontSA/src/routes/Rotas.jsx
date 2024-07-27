@@ -16,7 +16,7 @@ export default function Rotas() {
 
           </Route>
           <Route path='/monitoramento-maquinas' element={<HomeMM/>}>
-            <Route path="home" element={<HomeMM/>}/>
+            <Route path="geral" element={<HomeMM/>}/>
             <Route path="kpi-maquinas" element={<></>}/>
             <Route path="cadastros" element={<></>}/>
           </Route>

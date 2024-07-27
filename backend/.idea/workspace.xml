@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="950f64a6-a401-4107-aa89-36378a808bef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-auth-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/login-auth-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/pages/monitoramentoMaquinas/HomeMM.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/pages/monitoramentoMaquinas/HomeMM.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/styles/components/indusphere/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/styles/components/indusphere/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,17 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.LoginAuthApiApplication.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.LoginAuthApiApplication.executor": "Run",
     "git-widget-placeholder": "monitoramento-maquina",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/ariel_alejandro/Documents/github/SistemaSA",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
