@@ -25,7 +25,7 @@ class GrafLinha extends React.Component {
           curve: 'straight'
         },
         title: {
-          text: 'Product Trends by Month',
+          text: '',
           align: 'left'
         },
         grid: {

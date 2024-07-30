@@ -13,6 +13,9 @@ class Pizza extends React.Component {
           type: 'pie',
         },
         labels: props.labels || [],
+        legend: {
+          position: 'bottom'
+        },
         responsive: [{
           breakpoint: 480,
           options: {

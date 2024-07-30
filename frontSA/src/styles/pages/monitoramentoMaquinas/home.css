@@ -93,10 +93,16 @@
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 20px;
+    margin: 0 0.5%;
 }
 
 .chart-small {
-    width: 30%; /* Garantir que os gráficos tenham o mesmo tamanho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 200px; /* Garantir que os gráficos tenham o mesmo tamanho */
 }
 
 .chart h3 {

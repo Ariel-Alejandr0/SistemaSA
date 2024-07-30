@@ -5,6 +5,8 @@ import '../../styles/pages/monitoramentoMaquinas/home.css'
 import Gauge from '../../components/monitoramentoMaquinas/Gauge';
 import GrafLinha from '../../components/monitoramentoMaquinas/GrafLinha';
 import Pizza from '../../components/monitoramentoMaquinas/Pizza';
+import GrafColunas from '../../components/monitoramentoMaquinas/GrafCoulnas';
+import ProgressBar from '../../components/monitoramentoMaquinas/ProgressBar';
 
 
 export default function HomeMM() {
@@ -99,11 +101,7 @@ export default function HomeMM() {
             <div >
                 <div className="dashboard">
                 <h2>Dashboard Máquinas</h2>
-                <p>Qtd. produzida / Qtd. planejada</p>
-                <div className="progress">
-                    <div className="progress-bar" style={{width: '35%'}} />
-                </div>
-                <p>1.670 / 4.750</p>
+                    <ProgressBar qtdProd={2000} qtdPlan={4350}/>
                 </div>
                 <div className="metrics">
                 <div className="metric">
@@ -134,7 +132,7 @@ export default function HomeMM() {
                 </div>
                 <div className="chart chart-small">
                     <h3>Motivos de parada</h3>
-                    <canvas id="lineChart" />
+                    <GrafColunas data={[5, 1, 10, 1]} categories={['Fio rompido', 'Em manutenção', 'Rolo concluído', 'Falha de Equipamento']}/>
                 </div>
                 </div>
             </div>
