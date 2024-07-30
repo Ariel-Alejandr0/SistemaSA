@@ -4,6 +4,7 @@ import * as StompJs from '@stomp/stompjs';
 import '../../styles/pages/monitoramentoMaquinas/home.css'
 import Gauge from '../../components/monitoramentoMaquinas/Gauge';
 import GrafLinha from '../../components/monitoramentoMaquinas/GrafLinha';
+import Pizza from '../../components/monitoramentoMaquinas/Pizza';
 
 
 export default function HomeMM() {
@@ -129,11 +130,11 @@ export default function HomeMM() {
                 </div>
                 <div className="chart chart-small">
                     <h3>Timeline Máquinas</h3>
-                    <canvas id="lineChart" />
+                    <Pizza series={[80, 18, 2]} labels={['Produzindo', 'Parada', 'Desconectada']}/>
                 </div>
                 <div className="chart chart-small">
                     <h3>Motivos de parada</h3>
-                    <canvas id="downtimeChart" />
+                    <canvas id="lineChart" />
                 </div>
                 </div>
             </div>
