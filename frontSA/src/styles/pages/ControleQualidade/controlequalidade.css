@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #03073A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #03073A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 2px solid #ffffff;
+}
+
+button:hover {
+    background-color: white;
+    color: #03073A;
+    border: 2px solid #03073A;
+}
+
+button[type="button"] {
+    background-color: #008CBA;
+}
+
+button[type="button"]:hover {
+    background-color: #007bb5;
+}
+
+.erro-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.erro-item label {
+    text-align: left;
+}
+
+/* Header Principal */
+.headerprincipal {
+    background: linear-gradient(90deg, #1f1c54, #04061b);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    height: 100px;
+}
+
+.headerprincipal h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+.headerprincipal a {
+    text-decoration: none;
+}
