@@ -25,16 +25,18 @@ public class Machine {
     private String idTipoMaquina;
     private Date dataInstalacao;
     private String setor;
-    private String idUsuario;
     private Date ultimaManutencao;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 
-    public Machine(String name,String idTipoMaquina,Date dataInstalacao, String setor, String idUsuario, Date ultimaManutencao) {
+    public Machine(String name, String idTipoMaquina, Date dataInstalacao, String setor, Usuario usuario, Date ultimaManutencao) {
         this.name = name;
         this.idTipoMaquina = idTipoMaquina;
         this.dataInstalacao = dataInstalacao;
         this.setor = setor;
-        this.idUsuario = idUsuario;
+        this.usuario = usuario;
         this.ultimaManutencao = ultimaManutencao;
     }
 }

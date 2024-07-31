@@ -16,7 +16,7 @@ export const useApi = () => ({
         try {
             const res = await api.post('/login', { 
                 email: email, 
-                password: password 
+                senha: password 
             })
             return res.data;
         } catch (error) {
