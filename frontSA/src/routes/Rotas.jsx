@@ -11,6 +11,7 @@ import ControleQualidade from "../pages/controleQualidade/ControleQualidade"
 import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErros"
 import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
+import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
 
 export default function Rotas() {
   return (
@@ -23,9 +24,9 @@ export default function Rotas() {
             <Route path='verificar-estoque-produto' element={<VerficiarEstoqueProduto/>}/>
             <Route path='adicionar-produto' element={<AdicionarProduto/>}/>
           </Route>
-          <Route path='/monitoramento-maquinas' element={<HomeMM/>}>
+          <Route path='/monitoramento-maquinas' element={<Outlet/>}>
             <Route path="geral" element={<HomeMM/>}/>
-            <Route path="kpi-maquinas" element={<></>}/>
+            <Route path="kpi-maquinas" element={<KpiMaquinas/>}/>
             <Route path="cadastros" element={<></>}/>
           </Route>
           <Route path='/rastreio-rfid' element={<Outlet/>}>
