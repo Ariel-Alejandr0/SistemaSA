@@ -19,7 +19,7 @@ export default function Login() {
   }
 
   useEffect(() => {
-    if(auth.user) navigate('/')
+    if(auth.user) navigate('/') 
   }, [auth.user])
 
   return (

@@ -9,3 +9,4 @@ import java.util.Optional;
 public interface MachineRepository extends JpaRepository<Machine, String> {
     Optional<Machine> findByName(String name);
 }
+

@@ -4,15 +4,15 @@ import Private from "../pages/Private"
 import RequireAuth from "../contexts/indusphere/RequireAuth"
 import Login from "../pages/indusphere/Login"
 import AdicionarProduto from "../pages/controleEstoque/AdicionarProduto"
-import GeralMM from "../pages/monitoramentoMaquinas/GeralMM"
-import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
-import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
 import VerficiarEstoqueProduto from "../pages/controleEstoque/VerficiarEstoqueProduto"
 import ServicosRastreamento from "../pages/rastreioRFID/ServicosRastreamento"
 import Servicos3D from "../pages/impressora3D/Servicos3D"
 import ControleQualidade from "../pages/controleQualidade/ControleQualidade"
 import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErros"
 import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
+import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
+import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
+import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
 import Pedido from "../pages/gestao/pedido"
 
 
@@ -28,7 +28,7 @@ export default function Rotas() {
             <Route path='adicionar-produto' element={<AdicionarProduto/>}/>
           </Route>
           <Route path='/monitoramento-maquinas' element={<Outlet/>}>
-            <Route path="geral" element={<GeralMM/>}/>
+            <Route path="geral" element={<HomeMM/>}/>
             <Route path="kpi-maquinas" element={<KpiMaquinas/>}/>
             <Route path="cadastros" element={<CadastroMaquinas/>}/>
           </Route>
