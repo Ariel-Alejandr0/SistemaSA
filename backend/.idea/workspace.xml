@@ -4,7 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="950f64a6-a401-4107-aa89-36378a808bef" name="Changes" comment="" />
+    <list default="true" id="950f64a6-a401-4107-aa89-36378a808bef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-auth-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/login-auth-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/LoginAuthApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/LoginAuthApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Fornecedor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Papel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/PapelPermissao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Permissao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/PessoaFisica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/PessoaJuridica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/RegisterRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/RegisterRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/RegisterRequestDTOmachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/RegisterRequestDTOmachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/machine/RegisterRequestDTOmachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/machine/ResponseDTOmachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/user/LoginRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/user/RegisterRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/dto/user/ResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/repositories/MachineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/repositories/MachineRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/service/MachineService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/websocket/Machine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/websocket/MachineController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/websocket/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Fornecedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Machine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Papel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/PapelPermissao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Permissao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/PessoaFisica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/PessoaJuridica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/MachineRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/MachineRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/service/MachineService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/websocket/Machine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/websocket/MachineController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/websocket/WebSocketConfig.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +105,8 @@
     "git-widget-placeholder": "monitoramento-maquina",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/ariel_alejandro/Documents/github/SistemaSA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
@@ -118,6 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721743989813</updated>
       <workItem from="1721917356160" duration="122000" />
+      <workItem from="1722553549878" duration="728000" />
     </task>
     <servers />
   </component>

@@ -9,37 +9,41 @@ import com.example.loginauthapi.dto.RegisterRequestDTO;
 import com.example.loginauthapi.dto.ResponseDTO;
 import com.example.loginauthapi.infra.security.TokenService;
 import com.example.loginauthapi.repositories.MachineRepository;
-import com.example.loginauthapi.repositories.UserRepository;
-import com.example.loginauthapi.service.MachineService;
+import com.example.loginauthapi.repositories.UsuarioRepository;
+
+import com.example.loginauthapi.service.mm.websocket.MachineService;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
+@JsonIgnoreProperties("machines")
 public class AuthController {
-    private final UserRepository repository;
+    private final UsuarioRepository repository;
     private final MachineRepository machineRepository;
     private final PasswordEncoder passwordEncoder;
     private final TokenService tokenService;
     private final MachineService machineService;
+//    private final EstoqueInsumosService estoqueInsumosService;
 
     @PostMapping("/register")
     public ResponseEntity<ResponseDTO> register(@RequestBody RegisterRequestDTO body) {
         Optional<Usuario> user = this.repository.findByEmail(body.email());
 
         if (user.isEmpty()) {
-            Usuario newUser = new Usuario(body.nome(), body.email(), body.idPapel(), passwordEncoder.encode(body.senha()), body.idPessoa(), body.dataCadastro());
+            Usuario newUser = new Usuario(body.nome(), body.email(), body.idPapel(), passwordEncoder.encode(body.senha()), body.pessoa(), body.dataCadastro());
             this.repository.save(newUser);
 
             String token = this.tokenService.generateToken(newUser);
-            return ResponseEntity.ok(new ResponseDTO(newUser.getNome(), newUser.getIdPapel(), token, newUser.getId_usuario(), newUser.getIdPessoa()));
+            return ResponseEntity.ok(new ResponseDTO(newUser.getNome(), newUser.getPapel(), token, newUser.getId_usuario(), newUser.getPessoa()));
         }
         return ResponseEntity.badRequest().build();
     }
@@ -67,7 +71,7 @@ public class AuthController {
 
         if (passwordEncoder.matches(body.senha(), user.getSenha())) {
             String token = this.tokenService.generateToken(user);
-            return ResponseEntity.ok(new ResponseDTO(user.getNome(), user.getIdPapel(), token, user.getId_usuario(), user.getIdPessoa()));
+            return ResponseEntity.ok(new ResponseDTO(user.getNome(), user.getPapel(), token, user.getId_usuario(), user.getPessoa()));
         }
         return ResponseEntity.badRequest().build();
     }

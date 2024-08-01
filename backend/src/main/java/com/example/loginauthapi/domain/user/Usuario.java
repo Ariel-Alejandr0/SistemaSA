@@ -2,21 +2,18 @@ package com.example.loginauthapi.domain.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.Instant;
 import java.util.List;
 
-@Table(name = "Usuario")
-@Entity(name = "Usuario")
-@Getter
+
+@Entity
+@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = "id_usuario")
-@JsonIgnoreProperties("machines") // Ignora a serialização da lista de machines
+@Table(name = "Usuario")
 public class Usuario {
 
     @Id
@@ -24,28 +21,33 @@ public class Usuario {
     @Column(name = "id_usuario")
     private Long id_usuario;
 
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "email")
     private String email;
 
+    @Column(name = "papel")
+    private String papel;
 
-    private String idPapel;
+    @Column(name = "senha")
     private String senha;
 
     @OneToOne
     private Pessoa pessoa;
-    
-    private Long idPessoa;
+
+    @Temporal(TemporalType.TIMESTAMP)
     private Instant dataCadastro;
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Machine> machines;
 
-    public Usuario(String nome, String email, String idPapel, String senha, Long idPessoa, Instant dataCadastro) {
+    public Usuario(String nome, String email, String idPapel, String senha, Pessoa pessoa, Instant dataCadastro) {
         this.nome = nome;
         this.email = email;
-        this.idPapel = idPapel;
+        this.papel = papel;
         this.senha = senha;
-        this.idPessoa = idPessoa;
+        this.pessoa = pessoa;
         this.dataCadastro = Instant.now();
     }
 }

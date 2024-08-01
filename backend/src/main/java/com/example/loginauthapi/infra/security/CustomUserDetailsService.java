@@ -1,7 +1,7 @@
 package com.example.loginauthapi.infra.security;
 
 import com.example.loginauthapi.domain.user.Usuario;
-import com.example.loginauthapi.repositories.UserRepository;
+import com.example.loginauthapi.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
-    private UserRepository repository;
+    private UsuarioRepository repository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

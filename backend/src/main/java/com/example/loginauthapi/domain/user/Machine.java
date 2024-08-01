@@ -1,19 +1,16 @@
 package com.example.loginauthapi.domain.user;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
-@Table(name = "machine")
 @Entity(name = "machine")
-@Getter
+@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = "id_machine")
+@Table(name = "machine")
 public class Machine {
 
     @Id
@@ -21,10 +18,19 @@ public class Machine {
     @Column(name = "id_machine")
     private Long id_machine;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "id_tipo_maquina")
     private String idTipoMaquina;
+
+    @Column(name = "data_instalacao")
     private Date dataInstalacao;
+
+    @Column(name = "setor")
     private String setor;
+
+    @Column(name = "ultima_manutencao")
     private Date ultimaManutencao;
 
     @ManyToOne
