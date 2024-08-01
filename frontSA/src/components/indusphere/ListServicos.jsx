@@ -39,7 +39,7 @@ export default function ListServicos() {
         },
         {
             name: 'Gestao',
-            rota: '/gestao',
+            rota: '/gestao/pedido',
             src: '/equipes/gestao.png'
         },
     ]
