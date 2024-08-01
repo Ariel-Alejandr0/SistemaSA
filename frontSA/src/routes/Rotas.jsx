@@ -12,6 +12,7 @@ import QuantidadeErros from "../pages/controleQualidade/relatorios/QuantidadeErr
 import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
 import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
+import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
 
 export default function Rotas() {
   return (
@@ -27,7 +28,7 @@ export default function Rotas() {
           <Route path='/monitoramento-maquinas' element={<Outlet/>}>
             <Route path="geral" element={<HomeMM/>}/>
             <Route path="kpi-maquinas" element={<KpiMaquinas/>}/>
-            <Route path="cadastros" element={<></>}/>
+            <Route path="cadastros" element={<CadastroMaquinas/>}/>
           </Route>
           <Route path='/rastreio-rfid' element={<Outlet/>}>
             <Route path="servicos-rastreamento" element={<ServicosRastreamento/>}>
