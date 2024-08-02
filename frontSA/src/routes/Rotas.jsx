@@ -50,8 +50,8 @@ export default function Rotas() {
           </Route>
 
           <Route path="/gestao" element={<Outlet/>}>
-            <Route path='pedido' element={<FazerPedidos/>}/>
-            <Route path='fazer-pedido' element={<Pedidos/>}/>
+            <Route path='pedido' element={<Pedidos/>}/>
+            <Route path='fazer-pedido' element={<FazerPedidos/>}/>
           </Route>
         </Route>
     </Routes>
