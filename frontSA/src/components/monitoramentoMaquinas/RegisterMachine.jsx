@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { AuthCtx } from "../../contexts/indusphere/Auth";
 import axios from "axios";
 
-const RegisterMachine = () => {
+const RegisterMachine = ({ fehcarForm }) => {
     const { user } = useContext(AuthCtx);
     const [machineData, setMachineData] = useState({
         name: "",
@@ -35,14 +35,18 @@ const RegisterMachine = () => {
         } catch (error) {
             console.error("Error registering machine:", error);
         }
+        fehcarForm()
     };
 
     return (
         <div
             style={{
                 width: "40vw",
-                height: "50vh",
-                backgroundColor: 'blue',
+                height: "auto",
+                padding: '4%',
+                borderRadius: 12,
+                border: '2px solid',
+                backgroundColor: '#fff',
             }}
         >
             <form
@@ -95,6 +99,7 @@ const RegisterMachine = () => {
                     placeholder="Data da Última Manutenção"
                 />
                 <button type="submit">Registrar Máquina</button>
+                <button onClick={fehcarForm}> fechar </button>
             </form>
         </div>
     );
