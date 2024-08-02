@@ -25,7 +25,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
-@JsonIgnoreProperties("machines")
 public class AuthController {
     private final UsuarioRepository repository;
     private final MachineRepository machineRepository;

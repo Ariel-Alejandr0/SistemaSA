@@ -3,6 +3,7 @@ import Handsontable from 'handsontable';
 import { HotTable } from '@handsontable/react';
 import 'handsontable/dist/handsontable.full.css';
 import TableHeader from '../../components/monitoramentoMaquinas/TableHeader';
+import RegisterMachine from './RegisterMachine';
 
 export default function CadastroMaquinas() {
   // Dados da tabela
@@ -46,6 +47,7 @@ export default function CadastroMaquinas() {
         height="100%"
         stretchH="all"
       />
+      <RegisterMachine/>
     </div>
   );
 }

@@ -12,6 +12,7 @@ import java.util.List;
 @Data
 @Builder
 @NoArgsConstructor
+@JsonIgnoreProperties("machines")
 @AllArgsConstructor
 @Table(name = "Usuario")
 public class Usuario {

@@ -1,4 +1,5 @@
 import React from "react";
+import AddMaquina from "./AddMaquina";
 
 export default function TableHeader({ nomeTabela }) {
   return (
@@ -9,7 +10,7 @@ export default function TableHeader({ nomeTabela }) {
         alignItems: 'center',
         padding: '0 2%',
         width: "96%",
-        height: "5%",
+        height: 60,
         borderTopLeftRadius: 8,
         borderTopRightRadius: 8,
         backgroundColor: '#333',
@@ -17,6 +18,7 @@ export default function TableHeader({ nomeTabela }) {
       }}
     >
         {nomeTabela}
+        <AddMaquina/>
     </div>
   );
 }
