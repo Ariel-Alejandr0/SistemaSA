@@ -43,6 +43,7 @@ const RegistraUser = () => {
         }
       );
       console.log(response);
+      alert('Usuário registrado com sucesso!!!')
     } catch (error) {
       console.error("Error registering user:", error);
       tratandoErro(error)
