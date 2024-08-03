@@ -24,11 +24,8 @@ export const AuthProvider = ({ children }) => {
 
     const signin = async (email, password) => {
         const data =  await api.login(email, password);
-        console.log('trouxe data')
         if(data) {
-            console.log('oi')
             setUser(data)
-            console.log('mudou')
             localStorage.setItem('email', email)
             localStorage.setItem('password', password)
             return true

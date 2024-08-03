@@ -34,7 +34,6 @@ export default function CadastroMaquinas() {
         async function getMaquinas() {
             const request = await axios.get("http://localhost:8080/auth/allMachines");
             if (request) {
-                console.log(request)
                 setData(
                     request.data.map((maquina) => [
                         maquina.id_machine,
@@ -51,8 +50,7 @@ export default function CadastroMaquinas() {
         }
         getMaquinas()
     }, []);
-
-    useEffect(() => { console.log(dataTabela) }, [dataTabela])
+    
     return (
         <div
             style={{

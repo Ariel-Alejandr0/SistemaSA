@@ -12,7 +12,6 @@ export default function Login() {
 
   const handleLogin = async (event) => {
     event.preventDefault();
-    console.log(email, password)
     if(email && password) {
         await auth.signin(email, password)
     }

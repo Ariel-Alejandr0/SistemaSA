@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="950f64a6-a401-4107-aa89-36378a808bef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/service/geral/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/service/geral/UsuarioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/service/geral/UsuarioDTO$UsuarioDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/service/geral/UsuarioDTO$UsuarioDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/service/geral/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/service/geral/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/components/monitoramentoMaquinas/RegisterMachine.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/components/monitoramentoMaquinas/RegisterMachine.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721743989813</updated>
       <workItem from="1721917356160" duration="122000" />
-      <workItem from="1722553549878" duration="3019000" />
+      <workItem from="1722553549878" duration="6520000" />
     </task>
     <servers />
   </component>

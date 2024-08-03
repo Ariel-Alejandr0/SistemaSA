@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { AuthCtx } from "../../contexts/indusphere/Auth";
 import axios from "axios";
+import { tratandoErro } from "../../functions/tratandoErro";
 
 const RegisterMachine = ({ fehcarForm }) => {
     const { user } = useContext(AuthCtx);
@@ -31,11 +32,12 @@ const RegisterMachine = ({ fehcarForm }) => {
                     ...machineData,
                 }
             );
-            console.log(response);
+            alert('Máquina registrada com sucesso')
         } catch (error) {
             console.error("Error registering machine:", error);
+            tratandoErro(error)
         }
-        fehcarForm()
+        fehcarForm();
     };
 
     return (
@@ -43,16 +45,17 @@ const RegisterMachine = ({ fehcarForm }) => {
             style={{
                 width: "40vw",
                 height: "auto",
-                padding: '4%',
+                padding: "4%",
                 borderRadius: 12,
-                border: '2px solid',
-                backgroundColor: '#fff',
+                border: "2px solid",
+                backgroundColor: "#fff",
             }}
         >
             <form
                 style={{
                     width: "100%",
                     height: "100%",
+                    color: "black",
                 }}
                 onSubmit={handleSubmit}
             >
@@ -68,15 +71,25 @@ const RegisterMachine = ({ fehcarForm }) => {
                     name="idTipoMaquina"
                     value={machineData.idTipoMaquina}
                     onChange={handleChange}
-                    placeholder="ID Tipo Máquina"
+                    placeholder="Tipo da Máquina"
                 />
-                <input
-                    type="date"
-                    name="dataInstalacao"
-                    value={machineData.dataInstalacao}
-                    onChange={handleChange}
-                    placeholder="Data de Instalação"
-                />
+                <div
+                    style={{
+                        display: "flex",
+                        width: "100%",
+                        alignItems: "center",
+                    }}
+                >
+                    <label>Data de instalação: </label>
+                    <input
+                        style={{ flex: 1 }}
+                        type="date"
+                        name="dataInstalacao"
+                        value={machineData.dataInstalacao}
+                        onChange={handleChange}
+                        placeholder="Data de Instalação"
+                    />
+                </div>
                 <input
                     type="text"
                     name="setor"
@@ -91,13 +104,23 @@ const RegisterMachine = ({ fehcarForm }) => {
                     onChange={handleChange}
                     placeholder="ID Usuário"
                 />
-                <input
-                    type="date"
-                    name="ultimaManutencao"
-                    value={machineData.ultimaManutencao}
-                    onChange={handleChange}
-                    placeholder="Data da Última Manutenção"
-                />
+                <div
+                    style={{
+                        display: "flex",
+                        width: "100%",
+                        alignItems: "center",
+                    }}
+                >
+                    <label>Última manutenção: </label>
+                    <input
+                        style={{ flex: 1 }}
+                        type="date"
+                        name="ultimaManutencao"
+                        value={machineData.ultimaManutencao}
+                        onChange={handleChange}
+                        placeholder="Data da Última Manutenção"
+                    />
+                </div>
                 <button type="submit">Registrar Máquina</button>
                 <button onClick={fehcarForm}> fechar </button>
             </form>

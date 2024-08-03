@@ -13,6 +13,7 @@ import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
 import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
 import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
+import RegistraUser from "../pages/indusphere/RegistraUser"
 
 export default function Rotas() {
   return (
@@ -20,6 +21,7 @@ export default function Rotas() {
         <Route path="/login" element={<Login/>}></Route>
         <Route element={<RequireAuth/>}>
           <Route path="/" element={<Home/>}/>
+          <Route path="/registro-usuario" element={<RegistraUser/>}/> 
           <Route path="/private" element={<Private/>}/>
           <Route path='/controle-estoque' element={<Outlet/>}>
             <Route path='verificar-estoque-produto' element={<VerficiarEstoqueProduto/>}/>

@@ -8,6 +8,11 @@ export default function ListServicos() {
     
     const DATA = [
         {
+            name: 'Registro de usuarios',
+            rota: '/registro-usuario', // Corrigido
+            src: '/equipes/registro-usuario.png'   
+        },
+        {
             name: 'Controle de Estoque',
             rota: '/controle-estoque/verificar-estoque-produto',
             src: '/equipes/box.png'
@@ -48,7 +53,6 @@ export default function ListServicos() {
         <ul id="side_items">
             {DATA.map(service => {
                 let bg;
-                console.log(serviceFuntions.serviceName)
                 if (serviceFuntions.serviceName === service.name) {
                     bg = '#4f46e5'
                 } else {
