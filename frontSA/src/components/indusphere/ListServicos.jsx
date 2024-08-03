@@ -9,7 +9,7 @@ export default function ListServicos() {
     const DATA = [
         {
             name: 'Registro de usuarios',
-            rota: '/registro-usuario', // Corrigido
+            rota: '/', // Corrigido
             src: '/equipes/registro-usuario.png'   
         },
         {
