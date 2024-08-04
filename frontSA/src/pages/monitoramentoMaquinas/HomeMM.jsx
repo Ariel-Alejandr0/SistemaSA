@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { ServiceCtx } from "../../contexts/indusphere/Service";
-import useWebSocket from "react-use-websocket";
 import "../../styles/pages/monitoramentoMaquinas/home.css";
 import Gauge from "../../components/monitoramentoMaquinas/Gauge";
 import GrafLinha from "../../components/monitoramentoMaquinas/GrafLinha";
@@ -11,10 +10,10 @@ import Filtros from "../../components/monitoramentoMaquinas/Filtros";
 
 export default function HomeMM() {
     const service = useContext(ServiceCtx);
-    // const [stompClient, setStompClient] = useState(null);
-    // const [connected, setConnected] = useState(false);
-    // const [greetings, setGreetings] = useState([]);
-    // const [contador, setcontador] = useState(0);
+    const [disponibilidade, setDisponibilidade] = useState(25);
+    const [performance, setPerformance] = useState(100);
+    const [qualidade, setQualidade] = useState(80);
+    const [oees, setOees] = useState({ media: null, oees: [0] });
 
     useEffect(() => {
         service.setSrcLogo("/equipes/monitor.png");
@@ -34,50 +33,32 @@ export default function HomeMM() {
         ]);
     }, []);
 
-    // useEffect(() => {
-    //     const client = new StompJs.Client({
-    //         brokerURL: "ws://localhost:8080/gs-guide-websocket",
-    //         reconnectDelay: 5000,
-    //         heartbeatIncoming: 4000,
-    //         heartbeatOutgoing: 4000,
-    //     });
+    const somaOee = (arr) => {
+        let somatorio = 0;
+        arr.forEach((element) => {
+            somatorio += element;
+        });
+        return somatorio;
+    };
 
-    //     client.onConnect = () => {
-    //         setConnected(true);
-    //         console.log("Connected");
-    //         client.subscribe("/topic/greetings", (message) => {
-    //             const content = JSON.parse(message.body).content;
-    //             setcontador(content);
-    //             showGreeting(content);
-    //         });
-    //     };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDisponibilidade(Math.floor(Math.random() * 50) + 50);
+            setPerformance(Math.floor(Math.random() * 50) + 50);
+            setQualidade(Math.floor(Math.random() * 50) + 50);
+        }, 10000);
 
-    //     client.onStompError = (frame) => {
-    //         console.error("Broker reported error: " + frame.headers["message"]);
-    //         console.error("Additional details: " + frame.body);
-    //     };
+        return () => clearInterval(interval);
+    }, []);
 
-    //     client.activate();
-    //     setStompClient(client);
-
-    //     return () => {
-    //         if (client) client.deactivate();
-    //     };
-    // }, []);
-
-    // const showGreeting = (message) => {
-    //     setGreetings((prevGreetings) => [...prevGreetings, message]);
-    // };
-
-    // const connect = () => {
-    //     if (stompClient) stompClient.activate();
-    // };
-
-    // const disconnect = () => {
-    //     if (stompClient) stompClient.deactivate();
-    //     setConnected(false);
-    //     console.log("Disconnected");
-    // };
+    useEffect(() => {
+        const newOee = parseInt((disponibilidade * performance * qualidade) / 10000);
+        setOees((prev) => {
+            const newOees = [...prev.oees, newOee];
+            const newMedia = somaOee(newOees) / newOees.length;
+            return { media: parseInt(newMedia), oees: newOees };
+        });
+    }, [disponibilidade, performance, qualidade]);
 
     return (
         <div
@@ -96,41 +77,37 @@ export default function HomeMM() {
                 <div className="metrics">
                     <div className="metric">
                         <h3>OEE</h3>
-                        <Gauge num={3} />
+                        <Gauge num={parseInt((disponibilidade * performance * qualidade) / 10000)} />
                     </div>
                     <div className="metric">
                         <h3>Disponibilidade</h3>
-                        <Gauge num={25} />
+                        <Gauge num={disponibilidade} />
                     </div>
                     <div className="metric">
                         <h3>Performance</h3>
-                        <Gauge num={100} />
+                        <Gauge num={performance} />
                     </div>
                     <div className="metric">
                         <h3>Qualidade</h3>
-                        <Gauge num={80} />
+                        <Gauge num={qualidade} />
                     </div>
                 </div>
                 <div className="charts">
                     <div className="chart chart-small">
-                        <h3>OEE por Dia</h3>
+                        <h3>OEE medio por Dia</h3>
                         <GrafLinha
-                            oees={[10, 41, 35, 51, 49, 62, 69, 91, 100]}
-                            dias={[
-                                "Jan",
-                                "Feb",
-                                "Mar",
-                                "Apr",
-                                "May",
-                                "Jun",
-                                "Jul",
-                                "Aug",
-                                "Sep",
+                            oees={[
+                                49,
+                                33,
+                                25,
+                                40,
+                                oees.media ?? 0,
                             ]}
+                            dias={["Seg", "Ter", "Qua", "Qui", "Sex"]}
                         />
                     </div>
                     <div className="chart chart-small">
-                        <h3>Timeline Máquinas</h3>
+                        <h3>Tempo das Máquinas</h3>
                         <Pizza
                             series={[80, 18, 2]}
                             labels={["Produzindo", "Parada", "Desconectada"]}
