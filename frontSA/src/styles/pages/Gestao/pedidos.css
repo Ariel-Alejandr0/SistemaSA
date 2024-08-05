@@ -1,0 +1,47 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 20px 0;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .pedido {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pedido h3 {
+    margin-top: 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
