@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdf4a48f-b374-4f20-ad25-4817ceb6b938" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontSA/src/pages/gestao/Pedido.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/pages/gestao/Pedido.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/components/indusphere/ListServicos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/pages/gestao/FazerPedido.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/pages/gestao/FazerPedido.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/pages/gestao/Pedidos.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/routes/Rotas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontSA/src/styles/pages/Gestao/pedidos.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontSA/src/styles/pages/Gestao/pedidos.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.LoginAuthApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -46,7 +51,7 @@
     &quot;Spring Boot.LoginAuthApiApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;monitoramento-maquina&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ariel_alejandro/Documents/github/SistemaSA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vitor_rodrigues3/Downloads/SistemaSA-3/backend&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
@@ -93,8 +98,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LoginAuthApiApplication" />
       <item itemvalue="Application.LoginAuthApiApplication (1)" />
+      <item itemvalue="Application.LoginAuthApiApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -114,7 +119,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="950f64a6-a401-4107-aa89-36378a808bef" name="Changes" comment="" />
+      <changelist id="cdf4a48f-b374-4f20-ad25-4817ceb6b938" name="Changes" comment="" />
       <created>1721743989813</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

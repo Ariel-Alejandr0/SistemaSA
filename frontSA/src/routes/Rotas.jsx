@@ -13,8 +13,8 @@ import ListarErros from "../pages/controleQualidade/relatorios/ListarErros"
 import HomeMM from "../pages/monitoramentoMaquinas/HomeMM"
 import KpiMaquinas from "../pages/monitoramentoMaquinas/KpiMaquinas"
 import CadastroMaquinas from "../pages/monitoramentoMaquinas/CadastroMaquinas"
-import Pedidos from "../pages/gestao/Pedidos"
 import FazerPedidos from "../pages/gestao/FazerPedido"
+import Visualizar from "../pages/gestao/Visualizar"
 
 export default function Rotas() {
   return (
@@ -50,8 +50,8 @@ export default function Rotas() {
           </Route>
 
           <Route path="/gestao" element={<Outlet/>}>
-            <Route path='pedido' element={<Pedidos/>}/>
             <Route path='fazer-pedido' element={<FazerPedidos/>}/>
+            <Route path='visualizar-pedidos' element={<Visualizar/>}/>
           </Route>
         </Route>
     </Routes>
